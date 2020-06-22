@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蘑菇街-剁手节</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/partialviewslider.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/js/partialviewslider.js"></script>
+    <style>
+
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .top-bar-wrapper {
+            width: 100%;
+            height: 32px;
+            background-color: rgb(242, 242, 242);
+
+        }
+
+        .top-bar {
+            width: 1230px;
+
+
+        }
+
+        .left-bar {
+            color: #999;
+            line-height: 32px;
+            letter-spacing: 1px;
+            font-size: 3px;
+        }
+
+        .left-bar a {
+            color: #999;
+            text-decoration: none;
+            padding: 0 20px;
+            float: left;
+
+        }
+
+        .left-bar a:hover {
+            color: rgb(255, 0, 54);
+        }
+
+        .left-bar span {
+            float: left;
+        }
+
+        .right-bar {
+            float: right;
+            line-height: 32px;
+        }
+
+        .right-bar li {
+            float: left;
+            list-style: none;
+            font-size: 3px;
+        }
+
+        .right-bar a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .right-bar i {
+            color: #f10125;
+        }
+
+        .right-bar a:hover {
+            color: #f10125;
+        }
+
+        .right-bar .line {
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 12px 20px;
+        }
+
+        .logo {
+            margin-top: 40px;
+            margin-left: 150px;
+            margin-right: 80px;
+            height: 100px;
+            width: 130px;
+            float: left;
+        }
+
+        .logo img {
+            width: 100%;
+            float: left;
+        }
+
+
+        .search-m {
+            float: left;
+            height: 44px;
+            width: 552px;
+            margin-top: 60px;
+            margin-left: 76px;
+        }
+
+        .top-nav-search {
+            width: 552px;
+            position: relative;
+            height: 48px;
+        }
+
+        .top-nav-form {
+
+            overflow: hidden;
+            float: left;
+        }
+
+        .top-nav-form input:focus {
+            outline: none;
+        }
+
+        .ts_txt {
+            float: left;
+            width: 462px;
+            height: 48px;
+            line-height: 48px;
+            border: none;
+            font-size: 14px;
+            color: #666;
+            background: #f7f7f7;
+            padding: 0 15px;
+
+        }
+
+
+        .ts_btn {
+            float: right;
+            width: 58px;
+            height: 48px;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-image: url(https://s10.mogucdn.com/mlcdn/c45406/181205_2llkjh1g0fe27h51ahh5k5f27gkk9_116x96.png);
+            background-repeat: no-repeat;
+            background-size: 100%
+        }
+
+        .menu {
+            width: 1210px;
+        }
+
+        .cw-icon {
+            margin-top: 60px;
+            float: left;
+            position: relative;
+            border: 1px solid #e3e4e5;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        .cw-icon a {
+            text-decoration: none;
+            color: #f10125;
+            display: inline-block;
+        }
+
+        .cw-icon .fa {
+            color: #f10125;
+        }
+
+        .cw-icon .ci-count {
+            position: absolute;
+            top: 6px;
+            left: 10px;
+            right: auto;
+            display: inline-block;
+            color: #fff;
+            border-radius: 7px;
+            background-color: #e1251b;
+            min-width: 12px;
+            padding: 1px 3px;
+            height: 15px;
+            line-height: 15px;
+        }
+
+
+
+
+        .mainNav{
+            width: 1210px;
+            height: 36px;
+            line-height: 36px;
+            margin-left: 140px;
+        }
+
+
+        .mainNav li:first-child{
+            background:firebrick;
+            padding: 0 11px;
+        }
+
+
+        .mainNav li:not(first-child){
+            background: #1d1d1d;
+        }
+       .mainNav li{
+           float: left;
+           list-style: none;
+           padding: 0 15px;
+       }
+        .mainNav li a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .top-bar-menu{
+            margin-top: 8px;
+            width: 1210px;
+        }
+
+        .mainNav li .fa{
+            padding: 0 20px;
+        }
+
+        .part{
+            width: 824px;
+            height: 600px;
+            margin-left: 140px;
+        }
+
+        .content{
+            margin-left: 135px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar-wrapper">
+    <div class="top-bar">
+        <div class="left-bar">
+            <span>hi,欢迎来蘑菇街</span>
+            <a href="javascript:;">请登录</a>
+            <a href="javascript:;">免费注册</a>
+        </div>
+
+        <ul class="right-bar">
+            <li><a href="javascript:;">
+                <i class="fa fa-home"></i>
+                首页
+            </a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">
+                <i class="fa fa-shopping-bag"></i>
+                商城
+            </a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="menu">
+    <a class="logo" href="javascript:;"><img src="../static/img/mogulogo.png" alt=""></a>
+    <div class="search-m clearfix">
+        <div class="top-nav-search">
+            <form class="top-nav-form" action="" method="get">
+                <input class="ts_txt" type="text" placeholder="外套" name="q">
+                <input class="ts_btn" type="submit" value="">
+            </form>
+        </div>
+    </div>
+    <div class="cw-icon">
+        <i class="fa fa-shopping-cart"></i>
+        <a href="javascript:;">我的购物车</a>
+        <i class="ci-count">0</i>
+    </div>
+</div>
+
+
+<div class="content clearfix">
+
+    <div class="top-bar-menu">
+        <ul class="mainNav">
+            <li><a href="javascript:;">查看所有分类<i class="fa fa-th-list"></i></a></li>
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">女装男装</a></li>
+            <li><a href="javascript:;">鞋靴箱包</a></li>
+            <li><a href="javascript:;">运动户外</a></li>
+            <li><a href="javascript:;">珠宝配饰</a></li>
+            <li><a href="javascript:;">手机数码</a></li>
+            <li><a href="javascript:;">生活用品</a></li>
+            <li><a href="javascript:;">护肤彩妆</a></li>
+        </ul>
+    </div>
+    <div class="part clearfix">
+        <ul id="partial-view">
+            <li><a href="javascript:;" target="_blank"><img src="../static/img/partial-view/mac.jpg"
+                                                            title="Apple 2019新品 MacBook Pro 16【带触控栏】九代六核i7 16G 512G 深空灰 Radeon Pro 5300M 笔记本电脑 轻薄本"></a>
+            </li>
+            <li><a href="javascript:;" target="_blank"><img src="../static/img/partial-view/iphone.jpg"
+                                                            title="Apple iPhone 11 Pro (A2217) 256GB 银色 移动联通电信4G手机 双卡双待"></a>
+            </li>
+            <li><a href="javascript:;" target="_blank"><img src="../static/img/partial-view/airpad.jpg"
+                                                            title="Apple AirPods 蓝牙无线耳机 适用于iPhone7/8/X手机耳机"></a></li>
+            <li><a href="javascript:;" target="_blank"><img src="../static/img/partial-view/ipad.jpg"
+                                                            alt="智能驼 T90新款超薄平板电脑12寸安卓全网通4G手机平板二合一送华为小米pc笔记本电脑iPad耳机学生考研吃鸡"
+                                                            title="智能驼 T90新款超薄平板电脑12寸安卓全网通4G手机平板二合一送华为小米pc笔记本电脑iPad耳机学生考研吃鸡"></a>
+            </li>
+            <li><a href="javascript:;" target="_blank"><img src="../static/img/partial-view/ajone.png"
+                                                            alt="Jordan官方 AIR JORDAN 1 MID AJ1男子运动鞋 554724"
+                                                            title="Jordan官方 AIR JORDAN 1 MID AJ1男子运动鞋 554724"></a></li>
+            <li><a href="javascript:;" target="_blank"><img src="../static/img/partial-view/applewatchhead.jpg"
+                                                            title="Apple Watch Series 5 GPS款 44毫米金色铝金属表壳 粉砂色运动型表带）"></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="clearfix">占位置</div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        var partialView = $('#partial-view').partialViewSlider();
+
+        $('#prev').on('click', function () {
+            partialView.prev();
+        });
+        $('#next').on('click', function () {
+            partialView.next();
+        });
+        $('#play').on('click', function () {
+            partialView.play();
+        });
+        $('#pause').on('click', function () {
+            partialView.pause();
+        });
+    });
+</script>
+</body>
+</html>
