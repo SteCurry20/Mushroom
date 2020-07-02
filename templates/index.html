@@ -204,7 +204,7 @@
             width: 1210px;
             height: 36px;
             line-height: 36px;
-            margin-left: 140px;
+            margin-left: 122px;
         }
 
 
@@ -239,12 +239,130 @@
         .part{
             width: 824px;
             height: 600px;
-            margin-left: 140px;
+            margin-left: 120px;
         }
 
         .content{
             margin-left: 135px;
         }
+        .title1{
+            margin-left: 245px;
+        }
+
+        .title-content {
+            width: 1128px;
+            margin-left: 58px;
+        }
+
+        .title-content a img{
+            width: 238px;
+            float: left;
+        }
+        .hot-shop .span1{
+            width: 952px;
+            height: 40px;
+            margin-left: 58px;
+            margin-top: 2px;
+            background-color: rgb(244,244,244);
+            line-height: 40px;
+            color: rgb(51,51,51);
+            letter-spacing: 4px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .cube-wrapper{
+            width: 956px;
+            height: 358px;
+            margin:0 50px;
+            perspective:4000px;
+            cursor: pointer;
+        }
+        .cube-wrapper .img-list img{
+            width: 170px;
+            height: 170px;
+            top:0;
+            vertical-align: top;
+        }
+
+        .cube-wrapper .img-list{
+            position: absolute;
+            transition: .5s;
+        }
+
+        .cube-wrapper li{
+            list-style: none;
+        }
+
+        .cube-wrapper>ul > li{
+            float: left;
+            width: 170px;
+            height: 170px;
+            margin: 0 10px;
+        }
+
+        .cube-wrapper .shop-information ul>li{
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .cube-wrapper .shop-information ul{
+            width: 170px;
+            height: 170px;
+            margin-top: 25px;
+        }
+
+        .cube-wrapper .shop-information ul>li span{
+            color: firebrick;
+            display: inline-block;
+        }
+        .cube-wrapper .shop-information{
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            top: 0;
+            transition: .5s;
+            transform: rotateX(-90deg);
+            text-shadow: 1px 1px 1px rgba(255,255,255,1);
+            background-color: rgb(236,241,244);
+            font-size: 12px;
+            box-shadow: none;
+            visibility: hidden;
+
+
+        }
+
+        .cube-wrapper .item{
+            width: 170px;
+            height: 170px;
+            position: relative;
+            transform-style: preserve-3d;
+
+
+        }
+
+        .cube-wrapper .item:hover > .shop-information{
+
+            transform:rotateX(0deg);
+            visibility: visible;
+        }
+
+        .cube-wrapper .item:hover .img-list{
+            transform: rotateX(90deg) translateZ(-85px);
+            visibility: hidden;
+        }
+
+        .title-content img{
+            transition: 1s;
+
+        }
+        .title-content img:hover{
+            transform: scale(1.1);
+        }
+
+
+
+
     </style>
 </head>
 <body>
@@ -331,7 +449,195 @@
         </ul>
     </div>
 
-    <div class="clearfix">占位置</div>
+    <div class="clearfix">
+        <div class="title1">
+            <img src="../static/img/titile/title1.png" alt="">
+        </div>
+        <div class="title-content">
+            <a href="javascript:;"><img src="../static/img/span-img/span1.webp" alt=""></a>
+            <a href="javascript:;"><img src="../static/img/span-img/span2.webp" alt=""></a>
+            <a href="javascript:;"><img src="../static/img/span-img/span3.webp" alt=""></a>
+            <a href="javascript:;"><img src="../static/img/span-img/span4.webp" alt=""></a>
+        </div>
+        <div class="hot-shop clearfix">
+            <div class="span1">
+                热门商品
+            </div>
+        </div>
+
+        <div class="cube-wrapper">
+            <ul>
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/mac.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/airpad.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/iphone.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/ajone.png" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/applewatchhead.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/clothes.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/shoes.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/nike.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/ipad.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item">
+            <div class="img-list">
+                <img src="../static/img/partial-view/nike.jpg" alt="">
+            </div>
+            <div class="shop-information">
+                <ul>
+                    <li>数量：仅剩<span>10</span>个</li>
+                    <li>原价：<span>￥<del>18999.0</del></span></li>
+                    <li>折扣价：<span>￥17888.0</span></li>
+                    <li><button type="button" class="btn btn-danger buy">立即抢购</button></li>
+                </ul>
+            </div>
+                    </div>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer" style="width: 953px;background-color: #bfa;margin-left: 194px">
+    footer
 </div>
 
 
