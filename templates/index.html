@@ -210,27 +210,88 @@
             height: 36px;
             line-height: 36px;
             margin-left: 122px;
+            position: relative;
         }
 
 
-        .mainNav li:first-child{
+
+        .mainNav .right-nav ul li{
+            list-style: none;
+            float: left;
+            padding: 0 15px;
+            font-weight: bold;
+
+        }
+
+        .mainNav .icon{
+            margin-left: 5px;
+        }
+
+        .mainNav .right-nav .title-infomation:hover{
+            background-color: rgb(217,217,217);
+        }
+
+        .mainNav .right-nav a:hover{
+            color: firebrick;
+        }
+
+
+
+        .mainNav .right-nav{
+            background-color: #fff;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top:36px;
+            left: -2px;
+            z-index: 9999;
+            transition: height .5s;
+            overflow: hidden;
+
+        }
+
+        .mainNav .li-item:hover .right-nav{
+            width: 698px;
+            height: 300px;
+
+        }
+
+
+
+
+
+        .mainNav .right-nav ul li a{
+            color: rgb(102,102,102)
+        }
+
+        .mainNav .right-nav  ul li .fa:first-child{
+            color: rgb(102,102,102);
+        }
+
+
+
+        .mainNav > .li-item{
             background:firebrick;
-            padding: 0 11px;
+            padding: 0;
         }
 
 
-        .mainNav li:not(first-child){
+        .mainNav > .li-item-2{
             background: #1d1d1d;
+            padding: 0 15.5px;
         }
-       .mainNav li{
+
+       .mainNav > li{
            float: left;
            list-style: none;
-           padding: 0 15px;
+
        }
-        .mainNav li a{
+        .mainNav > li a{
             color: #ffffff;
             text-decoration: none;
         }
+
+
 
         .top-bar-menu{
             margin-top: 8px;
@@ -239,6 +300,7 @@
 
         .mainNav li .fa{
             padding: 0 20px;
+            color: #fff;
         }
 
         .part{
@@ -387,6 +449,7 @@
         }
         .information a{
             color: rgb(102,102,102);
+            text-decoration: none;
         }
         .copyright{
             text-align: center;
@@ -446,15 +509,86 @@
 
     <div class="top-bar-menu">
         <ul class="mainNav">
-            <li><a href="javascript:;">查看所有分类<i class="fa fa-th-list"></i></a></li>
-            <li><a href="javascript:;">首页</a></li>
-            <li><a href="javascript:;">女装男装</a></li>
-            <li><a href="javascript:;">鞋靴箱包</a></li>
-            <li><a href="javascript:;">运动户外</a></li>
-            <li><a href="javascript:;">珠宝配饰</a></li>
-            <li><a href="javascript:;">手机数码</a></li>
-            <li><a href="javascript:;">生活用品</a></li>
-            <li><a href="javascript:;">护肤彩妆</a></li>
+            <li class="li-item">
+                <a href="javascript:;" style="padding-left: 12px;">查看所有分类</a>
+                <i class="fa fa-th-list"></i>
+
+                    <div class="right-nav">
+                        <ul class="clearfix">
+                            <li class="title-infomation">女装男装<i class="fa fa-angle-right icon"></i> </li>
+                            <li><a href="">潮流女装</a></li>
+                            <li><a href="">初冬羽绒</a></li>
+                            <li><a href="">毛呢大衣</a></li>
+                            <li><a href="">温暖毛衣</a></li>
+                            <li><a href="">精选男装</a></li>
+                        </ul>
+
+                        <ul class="clearfix">
+                            <li class="title-infomation">鞋靴箱包 <i class="fa fa-angle-right"></i></li>
+                            <li><a href="">短靴</a></li>
+                            <li><a href="">男鞋</a></li>
+                            <li><a href="">女包</a></li>
+                            <li><a href="">男包</a></li>
+                            <li><a href="">服饰配件</a></li>
+                        </ul>
+
+                        <ul class="clearfix">
+                            <li class="title-infomation">运动户外 <i class="fa fa-angle-right"></i></li>
+                            <li><a href="">运动服饰</a></li>
+                            <li><a href="">户外运动</a></li>
+                            <li><a href="">健身装备</a></li>
+                            <li><a href="">骑行装备</a></li>
+                            <li><a href="">烧烤用具</a></li>
+                        </ul>
+
+                        <ul class="clearfix">
+                            <li class="title-infomation">手机数码 <i class="fa fa-angle-right"></i></li>
+                            <li><a href="">手机</a></li>
+                            <li><a href="">平板</a></li>
+                            <li><a href="">电脑</a></li>
+                            <li><a href="">相机</a></li>
+                            <li><a href="">耳机</a></li>
+                        </ul>
+
+                        <ul class="clearfix">
+                            <li class="title-infomation">生活用具 <i class="fa fa-angle-right"></i></li>
+                            <li><a href="">大家电</a></li>
+                            <li><a href="">厨房电器</a></li>
+                            <li><a href="">生活电器</a></li>
+                            <li><a href="">个护电器</a></li>
+                            <li><a href="">办公耗材</a></li>
+                        </ul>
+
+                        <ul class="clearfix">
+                            <li class="title-infomation">护肤彩妆 <i class="fa fa-angle-right"></i></li>
+                            <li><a href="">美容护肤</a></li>
+                            <li><a href="">强效保养</a></li>
+                            <li><a href="">超值彩妆</a></li>
+                            <li><a href="">香水</a></li>
+                            <li><a href="">洗面奶</a></li>
+                        </ul>
+
+                        <ul class="clearfix">
+                            <li class="title-infomation">珠宝配饰 <i class="fa fa-angle-right"></i></li>
+                            <li><a href="">珠宝首饰</a></li>
+                            <li><a href="">时尚饰品</a></li>
+                            <li><a href="">品质手表</a></li>
+                            <li><a href="">眼睛配饰</a></li>
+                            <li><a href="">发饰</a></li>
+                        </ul>
+
+                    </div>
+
+
+            </li>
+            <li class="li-item-2"><a href="javascript:;">首页</a></li>
+            <li class="li-item-2"><a href="javascript:;">女装男装</a></li>
+            <li class="li-item-2"><a href="javascript:;">鞋靴箱包</a></li>
+            <li class="li-item-2"><a href="javascript:;">运动户外</a></li>
+            <li class="li-item-2"><a href="javascript:;">珠宝配饰</a></li>
+            <li class="li-item-2"><a href="javascript:;">手机数码</a></li>
+            <li class="li-item-2"><a href="javascript:;">生活用品</a></li>
+            <li class="li-item-2"><a href="javascript:;">护肤彩妆</a></li>
         </ul>
     </div>
     <div class="part clearfix">
