@@ -1,0 +1,138 @@
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .clearfix::before,
+        .clearfix::after
+        {
+        content: '';
+        display: table;
+        clear: both;
+        }
+        .logo_wrap{
+            width: 100%;
+            padding: 20px 0;
+        }
+        .logo{
+            width: 1200px;
+            margin:0 auto;
+            position: relative;
+        }
+        .logo img{
+            position: absolute;
+            width: 130px;
+            top:-28px;
+        }
+        .logo a{
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            top: 4px;
+            width: 130px;
+            height: 57px;
+
+        }
+        .login-logo-tip{
+            font-size: 11px;
+            width: 861px;
+            margin-left: 20px;
+            background-color: #ffefef;
+            border: 1px solid #ffc0cc;
+            text-align: center;
+            color: #666;
+            line-height: 28px;
+            position: absolute;
+            top: 12px;
+        }
+        .lg_banner{
+            width: 62.5%;
+            float: left;
+            display: inline;
+            height: 600px;
+
+        }
+        .content{
+            width: 1263px;
+            margin: 0 auto;
+            background: url(../img/backgroun-img/login-backimg.png) center center no-repeat;
+        }
+        .lg_banner a{
+            height: 440px;
+            overflow: hidden;
+            margin-left: 56px;
+            margin-top: 80px;
+            display: block;
+            width: 700px;
+        }
+        .lg_box-wrap{
+            float: left;
+
+
+        }
+        .lg_box-wrap .lg_box{
+            margin-top: 60px;
+            opacity: 9;
+            background-color: #fff;
+            width: 400px;
+            height: 350px;
+        }
+        .lg_box .form-horizontal{
+            padding-top: 30px;
+        }
+        .code{
+            position: relative;
+        }
+        .code  img{
+            width: 90px;
+            height: 40px;
+            position: absolute;
+            top:-2px;
+            left: 195px;
+            margin-left: 30px;
+        }
+
+        .foot-bar{
+            margin-left: 65px;
+        }
+
+        .foot{
+            width: 1263px;
+            margin: 50px auto;
+        }
+
+        .foot ul li{
+            float: left;
+        }
+
+        .foot ul li a{
+            text-decoration: none;
+            color: #666;
+            font-size: 12px;
+        }
+        .foot ul li a:hover{
+            color: rgb(254,101,134);
+
+        }
+
+        .foot ul li{
+            margin: 0 15px;
+        }
+
+        .foot ul li.line{
+            height: 12px;
+            width: 1px;
+            background-color: #666;
+            font-size: 12px;
+            margin-top:8px;
+        }
+        .copyright{
+            font-size: 14px;
+            color: #666;
+            margin:0 auto;
+            text-align: center;
+        }
