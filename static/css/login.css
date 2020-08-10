@@ -136,3 +136,15 @@
             margin:0 auto;
             text-align: center;
         }
+
+
+        .register-login{
+            display: block;
+            float: right;
+            margin-top: 10px;
+
+        }
+        .register-login a{
+
+            color: rgb(130,119,124);
+        }

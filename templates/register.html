@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蘑菇街-剁手节</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/register.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../static/js/jQuery_Plugin/Sliding_Validation_Gu.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $submit = $(".confirm")
+            var sliding_validation = SlidingValidation.create($('.slider'), {
+                progress_bg: 'rgb(76,175,80)',
+                slide_block_wrapper_width: "210px"
+            }, function () {
+                $submit.preve
+                $submit.removeClass("disabled")
+                $submit.click(function () {
+                    alert("成功");
+                })
+            });
+
+            $submit.click(function (event) {
+                event.preventDefault();
+            })
+
+        })
+
+    </script>
+    <style>
+
+
+
+    </style>
+</head>
+<body>
+
+<div class="top-bar-wrapper">
+    <div class="top-bar">
+        <div class="left-bar">
+            <span>hi,欢迎来蘑菇街</span>
+            <a href="login.html">请登录</a>
+            <a href="javascript:;">免费注册</a>
+        </div>
+
+        <ul class="right-bar">
+            <li><a href="javascript:;">
+                <i class="fa fa-home"></i>
+                首页
+            </a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">
+                <i class="fa fa-shopping-bag"></i>
+                商城
+            </a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">我的订单</a></li>
+            <li class="line"></li>
+            <li><a href="javascript:;">关于我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="logo_text clearfix">
+    <div class="mugulogo">
+        <a href="index.html"><img src="../static/img/mogulogo.png" alt="logo"></a>
+    </div>
+    <div class="register_text"><span>用户注册</span></div>
+</div>
+
+<div class="outer">
+
+    <form class="form-horizontal  col-sm-offset-0">
+        <div class="form-group">
+            <label for="User" class="col-sm-2 control-label">用户名</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="User">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Password" class="col-sm-2 control-label">密码</label>
+            <div class="col-sm-3">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">确认密码</label>
+            <div class="col-sm-3">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">姓名</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Telphone" class="col-sm-2 control-label">电话</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="Telphone">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="address" class="col-sm-2 control-label">地址</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="Address">
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+            <div class="col-sm-3">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="form-group vcode">
+
+            <label for="vcode" class="col-sm-2 control-label">动态码</label>
+            <div class="col-sm-2  vcode">
+                <input type="text" class="form-control" placeholder="code">
+            </div>
+            <div class="col-sm-1">
+                <input type="button" class="form-control btn btn-primary btn-sm" value="动态码">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10 slider">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="confirm btn btn-success disabled btn-lg">确定</button>
+            </div>
+        </div>
+
+    </form>
+
+    <div class="register">
+        <div class="ad">
+            <dl>
+                <dt>
+                    注册即享受
+                </dt>
+                <dd>
+                    正品保障、正规发票
+                </dd>
+                <dd>
+                    货到付款、会员服务
+                </dd>
+                <dd>
+                    自由退换、售后上门
+                </dd>
+            </dl>
+        </div>
+        <dl>
+                            <dt>已经拥有账号了？</dt>
+                            <dd>
+                                立即登录即可体验在线购物！
+                                <a href="login.html">立即登录</a>
+                            </dd>
+                        </dl>
+    </div>
+
+</div>
+
+
+<div class="footer_img">
+    <div class="info_img">
+        <img src="../static/img/footer/footer.jpg" alt="正品保障">
+    </div>
+    <div class="footer_text">
+        <ul class="foot-bar clearfix">
+            <li><a href="javascript:;">关于我们</a></li>
+
+            <li><a href="javascript:;">招聘信息</a></li>
+
+            <li><a href="javascript:;">联系我们</a></li>
+
+            <li><a href="javascript:;">商家入驻</a></li>
+
+            <li><a href="javascript:;">商家后台</a></li>
+
+            <li><a href="javascript:;">规则中心</a></li>
+
+            <li><a href="javascript:;">规则众议院</a></li>
+
+            <li><a href="javascript:;">有害信息举报</a></li>
+
+            <li><a href="javascript:;">用户隐私保护</a></li>
+
+            <li><a href="javascript:;">意见反馈</a></li>
+        </ul>
+    </div>
+    <div class="copyright clearfix">Copyright © 2020 湖南工学院 版权所有</div>
+</div>
+
+
+</body>
+</html>

@@ -25,7 +25,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-;(function ($, window, doucment, undefined) {
+(function ($, window, doucment, undefined) {
 	var pluginName = 'partialViewSlider',
     defaults = {
       width: 70,
@@ -313,6 +313,8 @@ SOFTWARE.
 	  	moveSlider(this, index);
 	  }
   });
+
+  //指定方法调用，jquery方法的扩展
 
   $.fn[pluginName] = function ( options ) {
   	var plugin;

@@ -1,0 +1,181 @@
+
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .top-bar-wrapper {
+            width: 100%;
+            height: 32px;
+            background-color: rgb(242, 242, 242);
+
+
+        }
+
+        .top-bar {
+            width: 1230px;
+
+
+        }
+
+        .left-bar {
+            color: #999;
+            line-height: 32px;
+            letter-spacing: 1px;
+            font-size: 3px;
+        }
+
+        .left-bar a {
+            color: #999;
+            text-decoration: none;
+            padding: 0 20px;
+            float: left;
+            font-size: 14px;
+
+        }
+
+        .left-bar a:hover {
+            color: rgb(255, 0, 54);
+        }
+
+        .left-bar span {
+            float: left;
+            font-size: 14px;
+        }
+
+        .right-bar {
+            float: right;
+            line-height: 32px;
+        }
+
+        .right-bar li {
+            float: left;
+            list-style: none;
+            font-size: 3px;
+
+        }
+
+        .right-bar a {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .right-bar i {
+            color: #f10125;
+        }
+
+        .right-bar a:hover {
+            color: #f10125;
+        }
+
+        .right-bar .line {
+            width: 1px;
+            height: 10px;
+            background-color: #999;
+            margin: 12px 20px;
+        }
+        .logo_text {
+            position: relative;
+            height: 112px;
+
+
+        }
+
+        .mugulogo a {
+            display: block;
+            width: 100px;
+            margin-left: 150px;
+            position: absolute;
+            left: -108px;
+        }
+
+        .mugulogo img {
+            width: 100%;
+        }
+
+
+        .register_text {
+            position: absolute;
+            top: 41px;
+            left: 150px;
+            font-size: 15px;
+        }
+
+        .outer {
+            width: 944px;
+            border: 1px solid #d7d7d7;
+            margin: 0 auto;
+            padding-top: 50px;
+            position: relative;
+        }
+
+        .register {
+            width: 290px;
+            height: 294px;
+            background-color: #fff8db;
+            position: absolute;
+            top: 120px;
+            left: 652px;
+            border-bottom: 2px solid #f2f2f2;
+            border-left: 2px solid #f2f2f2;
+            padding: 20px;
+        }
+
+        .register dt {
+            line-height: 40px;
+            color: #bd5613;
+            font-size: 16px;
+            font-family: "Microsoft YaHei";
+        }
+
+        .register dd {
+            line-height: 28px;
+            color: #565656;
+        }
+        .register a{
+            text-decoration: none;
+            color: #bd5613;
+        }
+        .footer_img .info_img{
+            margin: 0 170px;
+        }
+        .footer_text{
+            margin:0 210px;
+            width: 950px;
+        }
+        .foot-bar li{
+            float: left;
+            list-style: none;
+        }
+        .foot-bar li a{
+            text-decoration: none;
+            color: #666;
+            font-size: 12px;
+        }
+        .foot-bar li a:hover{
+            color: rgb(254,101,134);
+
+        }
+
+        .foot-bar li{
+            margin: 0 15px;
+        }
+
+        .copyright{
+            font-size: 14px;
+            color: #666;
+            margin:0 auto;
+            text-align: center;
+        }
