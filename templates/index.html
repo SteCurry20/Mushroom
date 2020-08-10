@@ -19,7 +19,7 @@
         <div class="left-bar">
             <span>hi,欢迎来蘑菇街</span>
             <a href="login.html">请登录</a>
-            <a href="javascript:;">免费注册</a>
+            <a href="register.html">免费注册</a>
         </div>
 
         <ul class="right-bar">
@@ -444,20 +444,7 @@
 
 <script>
     $(document).ready(function () {
-        var partialView = $('#partial-view').partialViewSlider();
-
-        $('#prev').on('click', function () {
-            partialView.prev();
-        });
-        $('#next').on('click', function () {
-            partialView.next();
-        });
-        $('#play').on('click', function () {
-            partialView.play();
-        });
-        $('#pause').on('click', function () {
-            partialView.pause();
-        });
+        $('#partial-view').partialViewSlider();
     });
 </script>
 </body>
