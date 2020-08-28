@@ -8,101 +8,10 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.0/css/all.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../static/js/flyto.js"></script>
     <style>
-        .productList a{
-            text-decoration: none;
-            display: block;
-            color:#666666;
-            font-size: 14px;
 
-        }
-        .title-Category:nth-child(-n+6):nth-child(n){
-            padding: 5px;
-            font-size: 16px;
-            color: firebrick;
-        }
-        .title-Category:nth-child(-n+14):nth-child(n+6){
-            padding: 5px;
-            font-size: 16px;
-            color: #2c64b1;
-        }
-        .left-information{
-            margin-left: 121px;
-            height: 930px;
-            width: 215px;
-            border:solid 1px #e4e4e4;
-            color:#666666;
-            font: 12px tahoma, Arial, Verdana, sans-serif;
-            position: relative;
-
-        }
-        
-        .left-information ul li{
-            float: left;
-            margin: 10px 20px;
-        }
-
-        .left-information ul li a:hover{
-            color: firebrick;
-        }
-
-        li{
-            list-style: none;
-        }
-
-        .right-product{
-            width: 592px;
-            position: absolute;
-            top: 216px;
-            left: 488px;
-            border: 0 solid #e4e4e4;
-
-
-
-        }
-
-        .right-product ul li a{
-            display: block;
-        }
-
-        .right-product ul li a img{
-            width: 170px;
-        }
-        .right-product ul li{
-            float: left;
-            border: 1px solid #e4e4e4;
-            height: 300px;
-            width: 170px;
-            position: relative;
-        }
-        .right-product ul li{
-            margin-right: 23px;
-            margin-top: 10px;
-        }
-        .right-product ul li span{
-            display: block;
-            text-align: center;
-            color: green;
-        }
-        .right-product ul li span.price{
-            color: #c4161c;
-            position: absolute;
-            font-size: 14px;
-            font-weight: bold;
-            bottom: 0;
-            right: 20px;
-        }
-        .product_page{
-            float: right;
-            display: block;
-
-        }
-        .product_page span{
-            color: #fff;
-            background-color: #337ab7;
-            border-color: #337ab7;
-            padding: 6px 12px;
-        }
 
         
     </style>
@@ -115,7 +24,8 @@
                 })
                 $(this).css({"background-color":"firebrick","color":"#e4e4e4"});
                 e.preventDefault();
-            })
+            });
+
         })
     </script>
 </head>
@@ -341,7 +251,7 @@
         <div class="right-product">
                 <ul>
                     <li>
-                        <a href="#"><img src="../static/img/products/red_clothes.jpg" alt=""></a>
+                        <a href="buy.html"><img src="../static/img/products/red_clothes.jpg" alt=""></a>
                             <span>IEF/爱依服针织衫女2019冬季新款韩版宽松时尚雪花刺绣圆领上衣0N20F-A2216- 红 均码</span><span class="price">商城价： ￥ 100.0元</span>
                     </li>
                     <li>
@@ -414,6 +324,36 @@
         </div>
 
     </div>
+
+    <div class="footer_img">
+    <div class="info_img">
+        <img src="../static/img/footer/footer.jpg" alt="正品保障">
+    </div>
+    <div class="footer_text">
+        <ul class="foot-bar clearfix">
+            <li><a href="javascript:;">关于我们</a></li>
+
+            <li><a href="javascript:;">招聘信息</a></li>
+
+            <li><a href="javascript:;">联系我们</a></li>
+
+            <li><a href="javascript:;">商家入驻</a></li>
+
+            <li><a href="javascript:;">商家后台</a></li>
+
+            <li><a href="javascript:;">规则中心</a></li>
+
+            <li><a href="javascript:;">规则众议院</a></li>
+
+            <li><a href="javascript:;">有害信息举报</a></li>
+
+            <li><a href="javascript:;">用户隐私保护</a></li>
+
+            <li><a href="javascript:;">意见反馈</a></li>
+        </ul>
+    </div>
+    <div class="copyright clearfix">Copyright © 2020 湖南工学院 版权所有</div>
+</div>
 
 </body>
 </html>
