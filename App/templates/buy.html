@@ -10,6 +10,20 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../static/js/jQuery_Plugin/jquery-ui.min.js"></script>
     <script src="../static/js/flyto.js"></script>
+    <script>
+        $(function () {
+            var $heart=$(".fa-heart")
+            $heart.click(function () {
+                if ($heart.css("color") === "rgb(97, 97, 97)")
+                {
+                    $heart.css("color","red");
+                }
+                else{
+                    $heart.css("color","rgb(97, 97, 97)")
+                }
+            })
+        })
+    </script>
 </head>
 <body>
 <div class="top-bar-wrapper">
@@ -236,13 +250,14 @@
             <dt class="right-content">
                 <span class="info-title">IEF/爱依服针织衫女2019冬季新款韩版宽松时尚雪花刺绣圆领上衣0N20F-A2216- 红 均码</span>
                 <div>浏览量:249次</div>
-                <div>喜欢<span>：  0</span>人    <i class="fa fa-heart"></i></div>
-                <dl><dd>新 品 价:<del>￥199.0元</del></dd></dl>
+                <div>喜欢:     <span>0</span>人    <i class="fa fa-heart"></i></div>
+                <dl><dd>原 价:<del>￥199.0元</del></dd>
+                <dd>新 品 价: <span>￥169.0元</span></dd></dl>
             <div class="outer-cart">
                 <div> 购买数量: <input class="sur-input" type="text" value="1"></div>
                 <div class="surplus">该商品仅剩8件</div>
                 <div class="outer-add">
-                    <a class="add-to-cart" href="javascript:;">
+                    <a class="add-to-cart">
                     <i class="fa fa-shopping-cart"></i>
                     <span>加入购物车</span>
                     </a>

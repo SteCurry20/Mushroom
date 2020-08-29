@@ -401,3 +401,45 @@
         .info-title{
             text-align: center;
         }
+
+        .right-content>div{
+            color: #616161;
+            font-size: 8px;
+        }
+
+        .right-content>div>span{
+            color: red;
+        }
+
+        .right-content>dl>dd>del{
+            color: firebrick;
+        }
+
+        .right-content>dl>dd{
+            color: #888888;
+        }
+
+        .right-content dl dd>span{
+            color: #ef0101;
+        }
+
+        .sur-input{
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .outer-add{
+            margin-top: 30px;
+        }
+        .outer-add:hover{
+            cursor: pointer;
+        }
+
+        .info-title{
+            display: block;
+            margin-bottom: 38px;
+        }
+        .fa-heart{
+            margin-left:10px ;
+            cursor: pointer;
+        }
